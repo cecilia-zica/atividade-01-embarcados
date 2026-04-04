@@ -1,0 +1,326 @@
+export const attractions = [
+  {
+    id: "1",
+    name: "Museu Histórico de Santa Catarina - Palácio Cruz e Souza",
+    neighborhood: "Centro",
+    address: "Praça 15 de Novembro, 227 - Centro, Florianópolis",
+    description: "Localizado no Palácio Cruz e Sousa, o museu preserva a história política e cultural de Santa Catarina, com acervo de móveis, documentos e obras de arte do século XIX.",
+    schedule: "Terça a Sexta: 10h–17h | Sábado e Domingo: 10h–16h",
+    email: "contato@mhsc.sc.gov.br",
+    phone: "554832212504",
+    requiresReservation: false,
+    thumbnail: "https://floripamanha.org/wp-content/uploads/2021/05/museu-santa-catarina.jpg",
+    images: [
+      "https://floripamanha.org/wp-content/uploads/2021/05/museu-santa-catarina.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXulbvTBhTdAEJEynhkl1jLQj8lsqY7Z7nnw&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5969, lng: -48.5495 }
+  },
+  {
+    id: "2",
+    name: "Parque Estadual do Rio Vermelho",
+    neighborhood: "Rio Vermelho",
+    address: "Rod. SC-406, 8200 - Rio Vermelho, Florianópolis",
+    description: "Área de preservação ambiental com trilhas na mata atlântica, mirantes e acesso a praias desertas. Ideal para ecoturismo e observação de fauna nativa.",
+    schedule: "Todos os dias: 8h–17h",
+    email: "parque.riovermelho@fatma.sc.gov.br",
+    phone: "554832690062",
+    requiresReservation: true,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtGcfyPgYr6fbzpx1xBlohK5mblEJc-hL_g&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtGcfyPgYr6fbzpx1xBlohK5mblEJc-hL_g&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzCkn07pXYiqFGm3E7NaEjd2S26UFGgbZLyA&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.4833, lng: -48.3833 }
+  },
+  {
+    id: "3",
+    name: "Fortaleza de São José da Ponta Grossa",
+    neighborhood: "Jurerê",
+    address: "Ponta Grossa, s/n - Jurerê, Florianópolis",
+    description: "Construída no século XVIII para defender o litoral sul do Brasil, a fortaleza é um dos mais bem preservados exemplares da arquitetura militar colonial portuguesa.",
+    schedule: "Terça a Domingo: 9h–17h",
+    email: "fortaleza.pontagrossa@iphan.gov.br",
+    phone: "554832821907",
+    requiresReservation: false,
+    thumbnail: "https://www.viagensecaminhos.com/wp-content/uploads/2017/07/fortaleza-sao-jose-da-ponta-grossa.jpg",
+    images: [
+      "https://www.viagensecaminhos.com/wp-content/uploads/2017/07/fortaleza-sao-jose-da-ponta-grossa.jpg",
+      "https://fortalezas.paginas.ufsc.br/files/2011/03/ponta_grossa_vista-geral-dois.jpg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.4378, lng: -48.5119 }
+  },
+  {
+    id: "4",
+    name: "Lagoa da Conceição",
+    neighborhood: "Lagoa da Conceição",
+    address: "Av. das Rendeiras - Lagoa da Conceição, Florianópolis",
+    description: "Um dos pontos turísticos mais icônicos da Ilha, a Lagoa oferece passeios de windsurf, kitesurf, caiaque e a famosa travessia de barco. Cercada por dunas e mata nativa.",
+    schedule: "Passeios de barco: 9h–17h (verificar disponibilidade)",
+    email: "turismo@lagoadaconceicao.com.br",
+    phone: "5548999990000",
+    requiresReservation: true,
+    thumbnail: "https://media.istockphoto.com/id/1455072457/pt/foto/aerial-view-of-barra-da-lagoa-and-lagoa-da-conceicao-lake.jpg?s=612x612&w=0&k=20&c=WSDsPFZIgxdE4IdJZH2sat-ksFmruYcmSstdxDrXi3A=",
+    images: [
+      "https://media.istockphoto.com/id/1455072457/pt/foto/aerial-view-of-barra-da-lagoa-and-lagoa-da-conceicao-lake.jpg?s=612x612&w=0&k=20&c=WSDsPFZIgxdE4IdJZH2sat-ksFmruYcmSstdxDrXi3A=",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcB7dV5_-vZETkFJdcc8_a0QC18Not6HpyEQ&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5964, lng: -48.4597 }
+  },
+  {
+    id: "5",
+    name: "Trilha da Costa da Lagoa",
+    neighborhood: "Costa da Lagoa",
+    address: "Costa da Lagoa, Florianópolis - acesso por barco ou trilha",
+    description: "Trilha guiada de 7km pela Mata Atlântica às margens da Lagoa da Conceição, passando por cachoeiras e comunidades tradicionais de pescadores açorianos.",
+    schedule: "Saídas guiadas: Sábado e Domingo às 8h e 13h",
+    email: "trilhas@costadalagoa.tur.br",
+    phone: "5548999110000",
+    requiresReservation: true,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9MgOduCZQMQqa_Jg-TcGKSVq4HmxP206HA&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX9MgOduCZQMQqa_Jg-TcGKSVq4HmxP206HA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzx9BuoTffg8mT6RF2QV_NemcZXTIxOPpa5w&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5611, lng: -48.4736 }
+  },
+  {
+    id: "6",
+    name: "Ponte Hercílio Luz",
+    neighborhood: "Centro",
+    address: "Ponte Hercílio Luz, s/n - Centro, Florianópolis",
+    description: "Símbolo máximo de Florianópolis, a Ponte Hercílio Luz é a maior ponte pênsil do Brasil e uma das mais antigas ainda em operação. Inaugurada em 1926, é cartão-postal da cidade e ponto obrigatório para fotos ao pôr do sol.",
+    schedule: "Aberta para pedestres e ciclistas: Segunda a Domingo 6h–22h",
+    email: "turismo@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeOhq8aUCunni-I8_Gp_uIg2vKN7_qBA60A&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeOhq8aUCunni-I8_Gp_uIg2vKN7_qBA60A&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnc-KQIaO6uCdXf1Z6FQOHNBhl9WixIFOL0w&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5985, lng: -48.5530 }
+  },
+  {
+    id: "7",
+    name: "Piscinas Naturais da Barra da Lagoa",
+    neighborhood: "Barra da Lagoa",
+    address: "Praia da Barra da Lagoa, s/n - Barra da Lagoa, Florianópolis",
+    description: "Formações rochosas criam piscinas naturais de água cristalina em meio ao mar. O local é perfeito para snorkel e observação de peixes, polvos e estrelas-do-mar. Um dos segredos mais queridos dos moradores da ilha.",
+    schedule: "Acesso livre - melhor horário na maré baixa (consultar tábua de marés)",
+    email: "turismo@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuctGyK2vEsrW7IS2dMZEWLodIqTOIuhq1zw&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuctGyK2vEsrW7IS2dMZEWLodIqTOIuhq1zw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBbx_SVbmTgR473_hJV22Jqj94XaN3zlHVxA&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5700, lng: -48.4283 }
+  },
+  {
+    id: "8",
+    name: "Trilha da Lagoinha do Leste",
+    neighborhood: "Pântano do Sul",
+    address: "Acesso pela Praia do Pântano do Sul ou Praia da Armação - Sul da Ilha",
+    description: "Uma das trilhas mais bonitas e selvagens de Florianópolis. Cerca de 5km de caminhada pela Mata Atlântica levam à Lagoinha do Leste, uma lagoa de água doce cercada por dunas e mar aberto, sem acesso por estrada. Vale cada passo.",
+    schedule: "Acesso livre - recomendado sair cedo pela manhã",
+    email: "turismo@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://www.viagensecaminhos.com/wp-content/uploads/2019/10/mirante-morro-da-coroa-praia-lagoinha-do-leste.jpg",
+    images: [
+      "https://www.viagensecaminhos.com/wp-content/uploads/2019/10/mirante-morro-da-coroa-praia-lagoinha-do-leste.jpg",
+      "https://vidasemparedes.com.br/wp-content/uploads/2020/01/lagoinhadoleste-sc-vidasemparedes-6.jpg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.7672, lng: -48.5003 }
+  },
+  {
+    id: "9",
+    name: "Centro Leste",
+    neighborhood: "Centro",
+    address: "Av. Hercílio Luz, s/n - Centro, Florianópolis",
+    description: "O point favorito de quem mora em Florianópolis. Lugar pra encontrar os amigos, beber bastante e se divertir muito. Bares, botequins e restaurantes espalhados por ruas animadas que ganham vida especialmente ao fim de semana.",
+    schedule: "Estabelecimentos abertos a partir das 18h – madrugada adentro",
+    email: "turismo@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT27mzal-Cmg44tOAqFwiclhyfQoUwBZD2Hw&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT27mzal-Cmg44tOAqFwiclhyfQoUwBZD2Hw&s",
+      "https://img.nsctotal.com.br/wp-content/uploads/2024/03/desvio11.jpeg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5954, lng: -48.5480 }
+  },
+  {
+    id: "10",
+    name: "Mercado Público de Florianópolis",
+    neighborhood: "Centro",
+    address: "Rua Conselheiro Mafra, s/n - Centro, Florianópolis",
+    description: "Inaugurado em 1851, o Mercado Público é um dos pontos mais tradicionais e movimentados de Florianópolis. Abriga bares famosos, restaurantes, artesanato local, frutos do mar frescos e muito movimento na hora do almoço.",
+    schedule: "Segunda a Sexta: 7h–19h | Sábado: 7h–13h",
+    email: "mercado@floripa.sc.gov.br",
+    phone: "554832288468",
+    requiresReservation: false,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5X89bRUWFo-Rwbu1XpMOlQlM_SFyp0hINFA&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5X89bRUWFo-Rwbu1XpMOlQlM_SFyp0hINFA&s",
+      "https://viagemeturismo.abril.com.br/wp-content/uploads/2024/05/2048px-MercadoPublico1.jpg?crop=1&resize=1212,909"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5973, lng: -48.5493 }
+  },
+  {
+    id: "11",
+    name: "Ilha do Campeche",
+    neighborhood: "Campeche",
+    address: "Acesso por barco a partir da Praia do Campeche - Campeche, Florianópolis",
+    description: "Ilha particular com acesso restrito e controlado. Possui inscrições rupestres de 4.000 anos, trilhas na mata, mar de corais e uma das praias mais bonitas do Brasil. Só é possível chegar de barco, o que garante pouco fluxo de turistas.",
+    schedule: "Barcos saem da Praia do Campeche: 9h–15h (vagas limitadas, reserve com antecedência)",
+    email: "campeche@ibama.gov.br",
+    phone: "5548999220000",
+    requiresReservation: true,
+    thumbnail: "https://floripamanha.org/wp-content/uploads/2025/08/ilha-do-campeche.jpg",
+    images: [
+      "https://floripamanha.org/wp-content/uploads/2025/08/ilha-do-campeche.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/cd/71/fa/campeche-island.jpg?w=1200&h=-1&s=1"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.6900, lng: -48.4567 }
+  },
+  {
+    id: "12",
+    name: "Cachoeira da Solidão",
+    neighborhood: "Praia da Solidão",
+    address: "Servidão da Solidão - Praia da Solidão, Sul da Ilha, Florianópolis",
+    description: "Cachoeira escondida em meio à Mata Atlântica, acessível por uma trilha curta e tranquila. Poço natural perfeito para banho, com água fria e ambiente preservado. Pouco visitada por turistas, muito amada pelos locais.",
+    schedule: "Acesso livre - trilha aberta todos os dias",
+    email: "turismo@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/18/39/8b/caption.jpg?w=900&h=500&s=1",
+    images: [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/18/39/8b/caption.jpg?w=900&h=500&s=1",
+      "https://destinoflorianopolis.com.br/wp-content/uploads/2018/04/cachoeira-da-praia-da-solid%C3%A3o-Florian%C3%B3polis.jpg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.7800, lng: -48.5280 }
+  },
+  {
+    id: "13",
+    name: "Lagoa do Peri",
+    neighborhood: "Morro das Pedras",
+    address: "Rodovia SC-406, s/n - Lagoa do Peri, Florianópolis",
+    description: "Maior lagoa de água doce da Ilha, cercada por Mata Atlântica dentro do Parque Municipal da Lagoa do Peri. Ideal para caiaque, pesca esportiva e piquenique às margens. Água doce e tranquila com vista para o mar ao fundo.",
+    schedule: "Todos os dias: 7h–18h",
+    email: "lagoadoperi@floripamais.sc.gov.br",
+    phone: "554832381234",
+    requiresReservation: false,
+    thumbnail: "https://destinoflorianopolis.com.br/wp-content/uploads/2016/07/Lagoa-do-Peri.jpg",
+    images: [
+      "https://destinoflorianopolis.com.br/wp-content/uploads/2016/07/Lagoa-do-Peri.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjye7AEGZARtd8LChLvFuVoL1MT03UqCC1g&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.7233, lng: -48.5117 }
+  },
+  {
+    id: "14",
+    name: "Projeto Lontra",
+    neighborhood: "Morro das Pedras",
+    address: "Rua do Projeto Lontra - acesso via Morro das Pedras, Florianópolis",
+    description: "Lugar que só os locais sabem. Uma entrada alternativa e pouco conhecida para a Lagoa do Peri, pela Rua do Projeto Lontra. Sem ônibus turístico, sem multidão — só natureza, mata fechada e aquela sensação boa de ter descoberto um segredo.",
+    schedule: "Acesso livre - melhor ao amanhecer ou fim de tarde",
+    email: "contato@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://s2.glbimg.com/Wt8eyv9DhgNhufWx6cYHATfAl0Y=/620x465/s.glbimg.com/jo/g1/f/original/2014/01/13/lontra7.jpg",
+    images: [
+      "https://s2.glbimg.com/Wt8eyv9DhgNhufWx6cYHATfAl0Y=/620x465/s.glbimg.com/jo/g1/f/original/2014/01/13/lontra7.jpg",
+      "https://static.ndmais.com.br/2018/03/cropped/bb542093543ed1619762cc2660fda3a863c93b99.jpg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.7350, lng: -48.5050 }
+  },
+  {
+    id: "15",
+    name: "Projeto TAMAR",
+    neighborhood: "Barra da Lagoa",
+    address: "Av. João Gualberto Soares, 300 - Barra da Lagoa, Florianópolis",
+    description: "Base do Projeto TAMAR em Florianópolis, dedicada à preservação das tartarugas marinhas. Possui aquários com tartarugas em reabilitação, exposições educativas e loja de produtos sustentáveis. Ótimo passeio para todas as idades.",
+    schedule: "Todos os dias: 10h–18h",
+    email: "florianopolis@tamar.org.br",
+    phone: "554832321234",
+    requiresReservation: false,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9ARFQkXYVGLGEf8ql8bveWFiNfcvUjXjBQ&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9ARFQkXYVGLGEf8ql8bveWFiNfcvUjXjBQ&s",
+      "https://www.tamar.org.br/fotos_news/images/Atividades_interativas_.jpg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5683, lng: -48.4267 }
+  },
+  {
+    id: "16",
+    name: "Life Club",
+    neighborhood: "Vargem Pequena",
+    address: "Rodovia José Carlos Daux (SC-401), 14.525 - Vargem Pequena, Florianópolis",
+    description: "O point dos universitários de Floripa. Complexo de 15.000 m² com capacidade para 10.000 pessoas, 3 bares, camarotes e estacionamento monitorado. Noites temáticas, open bar, muito agito e uma galera jovem e animada.",
+    schedule: "Verão: Sexta e Sábado a partir das 23h | Resto do ano: eventos pontuais",
+    email: "contato@lifeclub.com.br",
+    phone: "5548994575324",
+    requiresReservation: true,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq8Qa7NZJwksJEgvz7lNaTWhEmhSWIOqgYZA&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq8Qa7NZJwksJEgvz7lNaTWhEmhSWIOqgYZA&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLnJu3RJL_fPYjBJmkdtUs1Un794cyE3NCkQ&s"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.4716, lng: -48.4723 }
+  },
+  {
+    id: "17",
+    name: "UFSC – Universidade Federal de Santa Catarina",
+    neighborhood: "Trindade",
+    address: "R. Eng. Agronômico Andrei Cristian Ferreira, s/n - Trindade, Florianópolis",
+    description: "O campus é lindo, cheio de vida, com restaurante universitário, centro de eventos, bosques e uma energia única. Ponto de encontro de estudantes de toda a ilha.",
+    schedule: "Campus aberto todos os dias - RU: Segunda a Sexta 11h–14h e 17h–19h",
+    email: "gab@contato.ufsc.br",
+    phone: "554837219000",
+    requiresReservation: false,
+    thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNGRbk5eLT-prB1I6hoktfPqRAmdWBOazHQ&s",
+    images: [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcNGRbk5eLT-prB1I6hoktfPqRAmdWBOazHQ&s",
+      "https://noticias.ufsc.br/files/2023/03/IMAGEM-02.png"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.5993, lng: -48.5190 }
+  },
+  {
+    id: "18",
+    name: "Dunas da Joaquina",
+    neighborhood: "Joaquina",
+    address: "Praia da Joaquina, s/n - Joaquina, Florianópolis",
+    description: "Enormes dunas de areia branca que se erguem ao lado do mar. Palco de campeonatos mundiais de sandboard, as dunas da Joaquina são um dos cenários mais marcantes de Florianópolis. Subir e descer rolando é obrigatório.",
+    schedule: "Acesso livre todos os dias",
+    email: "turismo@floripa.sc.gov.br",
+    phone: "554832391000",
+    requiresReservation: false,
+    thumbnail: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/338497529.jpg?k=bef4f3e86d027592e31c2027fcededcc6a5e2f80f51e7be6401642c6b32fbc9b&o=",
+    images: [
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/338497529.jpg?k=bef4f3e86d027592e31c2027fcededcc6a5e2f80f51e7be6401642c6b32fbc9b&o=",
+      "https://static.ndmais.com.br/2020/12/Sandboard.-Dunas-da-Praia-da-Joaquina.-Foto_-Arquivo_Daniel-Queiroz-scaled.jpg"
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    coordinates: { lat: -27.6325, lng: -48.4418 }
+  }
+];
