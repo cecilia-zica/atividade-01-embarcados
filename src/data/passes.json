@@ -1,0 +1,5 @@
+[
+  { "id": "1", "name": "Básico", "attractions": 3, "days": 3, "price": 89 },
+  { "id": "2", "name": "Plus",   "attractions": 5, "days": 5, "price": 149 },
+  { "id": "3", "name": "Top",    "attractions": 7, "days": 7, "price": 199 }
+]

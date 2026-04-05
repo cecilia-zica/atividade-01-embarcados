@@ -1,6 +1,50 @@
 import { StyleSheet } from 'react-native';
 
 
+// Botão padrão (compartilhado entre telas)
+
+export const btn = StyleSheet.create({
+  base: {
+    backgroundColor: '#f5f0eb',
+    paddingVertical: 14,
+    borderRadius: 30,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+    marginBottom: 12,
+  },
+  text: {
+    color: '#3d2b1f',
+    fontSize: 15,
+    fontWeight: 'bold',
+    letterSpacing: 1,
+  },
+  wine: {
+    backgroundColor: '#6d2b3d',
+    paddingVertical: 14,
+    borderRadius: 30,
+    alignItems: 'center',
+    shadowColor: '#6d2b3d',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+    elevation: 5,
+    marginBottom: 12,
+  },
+  wineText: {
+    color: '#fff',
+    fontSize: 15,
+    fontWeight: 'bold',
+    letterSpacing: 1,
+  },
+});
+
+
 // Tela Inicial (HomeScreen)
 
 export const homeStyles = StyleSheet.create({
@@ -24,13 +68,58 @@ export const homeStyles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: 220,
+    aspectRatio: 16 / 9,
     borderRadius: 15,
     marginBottom: 30,
+    resizeMode: 'contain',
+  },
+  carouselList: {
+    paddingVertical: 10,
+  },
+  carouselCard: {
+    width: 140,
+    marginRight: 12,
+    borderRadius: 10,
+    overflow: 'hidden',
+    backgroundColor: '#fff',
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+  },
+  carouselImage: {
+    width: 140,
+    height: 90,
     resizeMode: 'cover',
+  },
+  carouselName: {
+    fontSize: 12,
+    color: '#3d2b1f',
+    fontWeight: '600',
+    padding: 6,
+    minHeight: 46,
   },
   buttonContainer: {
     width: '80%',
+    marginTop: 10,
+  },
+  button: {
+    backgroundColor: '#6d2b3d',
+    paddingVertical: 14,
+    borderRadius: 30,
+    alignItems: 'center',
+    shadowColor: '#6d2b3d',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.35,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    letterSpacing: 1,
   }
 });
 
@@ -173,8 +262,8 @@ export const interestStyles = StyleSheet.create({
   infoContainer: { flex: 1, justifyContent: 'center' },
   name: { fontSize: 18, fontWeight: 'bold', color: '#2f3640', marginBottom: 4 },
   neighborhood: { fontSize: 14, color: '#7f8fa6', marginBottom: 8 },
-  removeBtn: { alignSelf: 'flex-start', backgroundColor: '#ff7675', paddingHorizontal: 10, paddingVertical: 5, borderRadius: 5 },
-  removeText: { color: '#fff', fontSize: 12, fontWeight: 'bold' }
+  removeBtn: { alignSelf: 'flex-start', backgroundColor: '#6d2b3d', paddingHorizontal: 12, paddingVertical: 6, borderRadius: 20 },
+  removeText: { color: '#fff', fontSize: 12, fontWeight: 'bold', letterSpacing: 0.5 }
 });
 
 
@@ -195,20 +284,22 @@ export const passesStyles = StyleSheet.create({
   },
   passName: { fontSize: 18, fontWeight: 'bold', color: '#2d3436' },
   passDetails: { fontSize: 14, color: '#636e72', marginVertical: 4 },
-  passPrice: { fontSize: 16, fontWeight: 'bold', color: '#0984e3' },
-  buyBtn: { backgroundColor: '#00b894', paddingHorizontal: 20, paddingVertical: 10, borderRadius: 8 },
-  buyBtnText: { color: '#fff', fontWeight: 'bold' },
+  passPrice: { fontSize: 16, fontWeight: 'bold', color: '#6d2b3d' },
+  buyBtn: { backgroundColor: '#6d2b3d', paddingHorizontal: 20, paddingVertical: 10, borderRadius: 20 },
+  buyBtnText: { color: '#fff', fontWeight: 'bold', letterSpacing: 0.5 },
   myPassCard: {
     flexDirection: 'row',
-    backgroundColor: '#dfe6e9',
+    backgroundColor: '#f5f0eb',
     padding: 15,
     borderRadius: 10,
     marginBottom: 10,
     justifyContent: 'space-between',
     alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#e0d6cc',
   },
-  myPassName: { fontSize: 16, fontWeight: 'bold', color: '#2d3436' },
-  myPassDate: { fontSize: 13, color: '#636e72' },
+  myPassName: { fontSize: 16, fontWeight: 'bold', color: '#3d2b1f' },
+  myPassDate: { fontSize: 13, color: '#7f6a5a' },
   statusBadge: { backgroundColor: '#b2bec3', paddingHorizontal: 10, paddingVertical: 4, borderRadius: 5 },
   statusText: { color: '#fff', fontSize: 11, fontWeight: 'bold' },
   emptyText: { textAlign: 'center', color: '#b2bec3', marginTop: 20 }

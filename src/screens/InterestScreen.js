@@ -2,12 +2,12 @@ import React, { useState, useCallback } from 'react';
 import { View, Text, FlatList, Image, TouchableOpacity, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from '@react-navigation/native';
-import { interestStyles as styles } from './styles';
+import { interestStyles as styles } from '../styles/styles';
 
 export default function InterestScreen({ navigation }) {
   const [interests, setInterests] = useState([]);
 
-  // toda vez que a tela for aberta, função para buscar os dados atualizados
+  // Recarrega a lista toda vez que abre a tela, pois user pode add lá da página de detalhes
   useFocusEffect(
     useCallback(() => {
       loadInterests();
@@ -17,15 +17,13 @@ export default function InterestScreen({ navigation }) {
   const loadInterests = async () => {
     try {
       const savedData = await AsyncStorage.getItem('@lista_interesses');
-      if (savedData) {
-        setInterests(JSON.parse(savedData));
-      }
+      if (savedData) setInterests(JSON.parse(savedData));
     } catch (error) {
       console.error(error);
     }
   };
 
-  // função extra para o usuário conseguir remover da lista
+  // Filtra localmente e salva a lista sem o item removido
   const handleRemove = async (idToRemove) => {
     try {
       const filteredList = interests.filter(item => item.id !== idToRemove);
@@ -38,7 +36,7 @@ export default function InterestScreen({ navigation }) {
   };
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity 
+    <TouchableOpacity
       style={styles.card}
       onPress={() => navigation.navigate('Detalhes', { attraction: item })}
     >
@@ -46,8 +44,7 @@ export default function InterestScreen({ navigation }) {
       <View style={styles.infoContainer}>
         <Text style={styles.name}>{item.name}</Text>
         <Text style={styles.neighborhood}>{item.neighborhood}</Text>
-        
-        {/* botão de remover */}
+
         <TouchableOpacity style={styles.removeBtn} onPress={() => handleRemove(item.id)}>
           <Text style={styles.removeText}>Remover</Text>
         </TouchableOpacity>

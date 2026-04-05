@@ -5,11 +5,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons'; // IMPORTANTE: Importando os ícones
 
 
-import HomeScreen from './HomeScreen';
-import AttractionsScreen from './AttractionsScreen';
-import DetailsScreen from './DetailsScreen';
-import InterestScreen from './InterestScreen';
-import PassesScreen from './PassesScreen';
+import HomeScreen from './src/screens/HomeScreen';
+import AttractionsScreen from './src/screens/AttractionsScreen';
+import DetailsScreen from './src/screens/DetailsScreen';
+import InterestScreen from './src/screens/InterestScreen';
+import PassesScreen from './src/screens/PassesScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
