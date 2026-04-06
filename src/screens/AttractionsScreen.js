@@ -1,24 +1,32 @@
-import React, { useMemo } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
-import attractions from '../data/attractions.json';
-import { listStyles as styles } from '../styles/styles';
+import React, { useMemo } from "react";
+import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
+import attractions from "../data/attractions.json";
+import { listStyles as styles } from "../styles/styles";
 
-// Proxy que contorna bloqueios de CORS em imagens externas
-const getSafeImageUrl = (url) =>
-  `https://images.weserv.nl/?url=${url.replace('https://', '')}`;
+// Função inteligente: usa proxy, a não ser que seja imagem do Google
+const getSafeImageUrl = (url) => {
+  // Se o link for do Google (gstatic), devolve o link direto sem usar o proxy
+  if (url.includes("gstatic.com")) {
+    return url;
+  }
+
+  // Para todas as outras, continua usando o proxy normalmente
+  const urlSemHttps = url.replace("https://", "");
+  return `https://images.weserv.nl/?url=${encodeURIComponent(urlSemHttps)}`;
+};
 
 export default function AttractionsScreen({ navigation }) {
-
   // useMemo evita reordenar a lista a cada re-render, só roda quando attractions mudar
-  const sortedAttractions = useMemo(() =>
-    [...attractions].sort((a, b) => a.name.localeCompare(b.name)),
-  [attractions]);
+  const sortedAttractions = useMemo(
+    () => [...attractions].sort((a, b) => a.name.localeCompare(b.name)),
+    [attractions],
+  );
 
   const renderItem = ({ item }) => {
     return (
       <TouchableOpacity
         style={styles.card}
-        onPress={() => navigation.navigate('Detalhes', { attraction: item })}
+        onPress={() => navigation.navigate("Detalhes", { attraction: item })}
       >
         <Image
           source={{ uri: getSafeImageUrl(item.thumbnail) }}
