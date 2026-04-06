@@ -3,13 +3,12 @@ import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
 import attractions from "../data/attractions.json";
 import { listStyles as styles } from "../styles/styles";
 
-// Função inteligente: usa proxy, a não ser que seja imagem do Google
+// usa proxy, a não ser que seja imagem do Google
 const getSafeImageUrl = (url) => {
-  // Se o link for do Google (gstatic), devolve o link direto sem usar o proxy
+  // Se o link for do Google (gstatic)
   if (url.includes("gstatic.com")) {
     return url;
   }
-
   // Para todas as outras, continua usando o proxy normalmente
   const urlSemHttps = url.replace("https://", "");
   return `https://images.weserv.nl/?url=${encodeURIComponent(urlSemHttps)}`;

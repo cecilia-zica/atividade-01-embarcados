@@ -83,7 +83,7 @@ export default function DetailsScreen({ route }) {
             activeOpacity={0.8}
             onPress={() => Linking.openURL(attraction.videoUrl)}
           >
-            <Text style={btn.text}>Assistir Vídeo (YouTube)</Text>
+            <Text style={btn.text}>▶️ Assistir Vídeo (YouTube)</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -91,7 +91,7 @@ export default function DetailsScreen({ route }) {
             activeOpacity={0.8}
             onPress={() => Linking.openURL(mapUrl)}
           >
-            <Text style={btn.text}>Abrir no Mapa</Text>
+            <Text style={btn.text}>📍 Abrir no Mapa</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -99,7 +99,7 @@ export default function DetailsScreen({ route }) {
             activeOpacity={0.8}
             onPress={() => Linking.openURL(`tel:${attraction.phone}`)}
           >
-            <Text style={btn.text}>Ligar</Text>
+            <Text style={btn.text}>📞 Ligar</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -109,7 +109,7 @@ export default function DetailsScreen({ route }) {
               Linking.openURL(`whatsapp://send?phone=${attraction.phone}`)
             }
           >
-            <Text style={btn.text}>Chamar no WhatsApp</Text>
+            <Text style={btn.text}>💬 Chamar no WhatsApp</Text>
           </TouchableOpacity>
 
           <TouchableOpacity

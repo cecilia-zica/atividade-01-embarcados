@@ -1,32 +1,30 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Ionicons } from '@expo/vector-icons'; // IMPORTANTE: Importando os ícones
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Ionicons } from "@expo/vector-icons";
 
-
-import HomeScreen from './src/screens/HomeScreen';
-import AttractionsScreen from './src/screens/AttractionsScreen';
-import DetailsScreen from './src/screens/DetailsScreen';
-import InterestScreen from './src/screens/InterestScreen';
-import PassesScreen from './src/screens/PassesScreen';
+import HomeScreen from "./src/screens/HomeScreen";
+import AttractionsScreen from "./src/screens/AttractionsScreen";
+import DetailsScreen from "./src/screens/DetailsScreen";
+import InterestScreen from "./src/screens/InterestScreen";
+import PassesScreen from "./src/screens/PassesScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-
 function AttractionsStack() {
   return (
     <Stack.Navigator>
-      <Stack.Screen 
-        name="Lista" 
-        component={AttractionsScreen} 
-        options={{ headerShown: false }} 
+      <Stack.Screen
+        name="Lista"
+        component={AttractionsScreen}
+        options={{ headerShown: false }}
       />
-      <Stack.Screen 
-        name="Detalhes" 
-        component={DetailsScreen} 
-        options={{ title: 'Detalhes da Atração' }}
+      <Stack.Screen
+        name="Detalhes"
+        component={DetailsScreen}
+        options={{ title: "Detalhes da Atração" }}
       />
     </Stack.Navigator>
   );
@@ -40,21 +38,21 @@ export default function App() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'Início') {
-              iconName = focused ? 'home' : 'home-outline';
-            } else if (route.name === 'Atrações') {
-              iconName = focused ? 'map' : 'map-outline';
-            } else if (route.name === 'Interesses') {
-              iconName = focused ? 'heart' : 'heart-outline';
-            } else if (route.name === 'Passes') {
-              iconName = focused ? 'ticket' : 'ticket-outline';
+            if (route.name === "Início") {
+              iconName = focused ? "home" : "home-outline";
+            } else if (route.name === "Atrações") {
+              iconName = focused ? "map" : "map-outline";
+            } else if (route.name === "Interesses") {
+              iconName = focused ? "heart" : "heart-outline";
+            } else if (route.name === "Passes") {
+              iconName = focused ? "ticket" : "ticket-outline";
             }
 
             return <Ionicons name={iconName} size={size} color={color} />;
           },
           // cores da barra
-          tabBarActiveTintColor: '#0984e3', // Azul quando selecionado
-          tabBarInactiveTintColor: 'gray',  // Cinza quando não selecionado
+          tabBarActiveTintColor: "#0984e3", // Azul quando selecionado
+          tabBarInactiveTintColor: "gray", // Cinza quando não selecionado
           headerShown: true, // Mostra o título no topo da tela
         })}
       >
